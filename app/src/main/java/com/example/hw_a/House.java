@@ -29,7 +29,7 @@ public class House extends SurfaceView {
      setWillNotDraw(false);
 
         red = new Paint();
-        red.setColor(0xFF8B0000);
+        red.setColor(0xFF580000);
         red.setStyle(Paint.Style.FILL);
 
         //sky
@@ -38,7 +38,7 @@ public class House extends SurfaceView {
         blue.setStyle(Paint.Style.FILL);
 
         green = new Paint();
-        green.setColor(0xFF50C878);
+        green.setColor(0xFF4F7942);
         green.setStyle(Paint.Style.FILL);
 
         pink = new Paint();
@@ -51,7 +51,7 @@ public class House extends SurfaceView {
         yellow.setStyle(Paint.Style.FILL);
 
         black = new Paint();
-        black.setColor(0xFF00000);
+        black.setColor(0xFF000000);
         black.setStyle(Paint.Style.FILL);
 
         //sky
@@ -66,22 +66,17 @@ public class House extends SurfaceView {
     {
         super.onDraw(c);
 
-        //base of house
-        c.drawRect(250,250,150, 150, pink);
-        //roof
-        //c.fillPolygon(250,250,width,height,black);
-        //grass
-        c.drawRect(500, 150, 500, 150,green);
-        //sun
-        c.drawOval(500,500,50,50,yellow);
-        //windows
-        c.drawOval(250,200,20,35,yellow);
-        c.drawOval(200,200, 20, 35, yellow);
-        //door
-        c.drawRect(175,200,30,50,black);
-        //Chimney
-        c.drawRect(220,250,10,20,red);
+
+        //Draws the dimensions on the grass by setting coordinates of each side of the rectangle
+        c.drawRect(1600, 2000, 0, 1600,green);
+        //Draws the dimensions on the house by setting coordinates of each side of the rectangle
+        c.drawRect(850,900,200,1700,black);
+        //Draws the dimensions on the chimney by setting coordinates of each side of the rectangle
+        c.drawRect(350,600,220,900,red);
+        //window
+        c.drawRect(500,500,50,50,yellow);
         //sky set as BackgroundColor
+
     }
 
 
